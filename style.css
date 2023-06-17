@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap');
+
+:root{
+    --bg-page: #252424;
+    --cor-principal: #fff;
+    --cor-secundaria: #009E8F;
+    --cor-btn-hover: #016B61;
+    --font: 'Nunito Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--bg-page)
+}
+
+.container{
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 9.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.logo span{
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--cor-principal);
+    margin-left: 10px;
+}
+
+
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.menu a{
+    color: var(--cor-principal);
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: bold;
+    transition: all ease-in-out .3s;
+}
+
+
+
+.selected a, .menu a:hover{
+    color: var(--cor-secundaria);
+}
+
+.btn-conta a{
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.btn-conta a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+}
+
+.principal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: var(--font);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo span:first-child{
+    color: var(--cor-secundaria);
+    font-size: 80px;
+}
+
+.titulo span:last-child{
+    color: var(--cor-principal);
+    font-size: 72px;
+    margin-top: -2.2rem;
+}
+
+.conteudo p{
+    width: 36.25rem;
+    color: var(--cor-principal);
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.form input{
+    width: 25rem;
+    height: 3rem;
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight: 400;
+    border-radius: 15px;
+    border: none;
+    padding-left: 15px;
+}
+
+.form input:focus, .form input::selection{
+    outline: none;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.form button{
+    width: 13rem;
+    height: 3.75rem;
+    outline: none;
+    border: none;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-principal);
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.form button:hover{
+    background-color: var(--cor-btn-hover);
+}
+
+.imagem{
+    width: 36.25rem;
+}
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 14px;
+    font-family: var(--font);
+}
+
+.rodape a{
+    color: var(--cor-secundaria);
+}
+
+.rodape a:hover{
+    color: var(--cor-btn-hover);
+}
